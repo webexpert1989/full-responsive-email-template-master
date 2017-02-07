@@ -1,0 +1,565 @@
+/*
+ * Vicinity - Email template
+ * stylesheet
+ * Created: 07/25/2016
+ */
+
+
+/*********************
+ * global */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#Vicinity {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    background: #fff url(../images/body-bg.png) top left repeat;
+}
+
+@media only screen and (min-width: 768px){
+    #Vicinity {
+        padding: 20px 10px;
+    }
+}
+
+/* Global css */
+.vc-wrap {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    background: #fff;
+}
+
+.vc-wrap,
+.vc-wrap *:not(.fa) {
+    font-family: "Droid Sans", Arial, sans-serif;
+    word-break: break-word !important;
+    box-sizing: border-box !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.vc-wrap .vc-clear:after {
+    content: "";
+    clear: both !important;
+    display: block !important;
+}
+
+.vc-wrap table {
+    width: 100%;
+}
+
+.vc-wrap table img {
+    max-width: 100%;
+}
+
+.vc-wrap table td {
+    padding: 0;
+}
+
+.vc-wrap p {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.vc-wrap a {
+    text-decoration: none !important;
+}
+
+.vc-wrap h1,
+.vc-wrap h2,
+.vc-wrap h3,
+.vc-wrap h4,
+.vc-wrap h5,
+.vc-wrap h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* background color */
+.vc-wrap .vc-bg-blackblue {
+    background-color: #1f3443 !important;
+}
+
+.vc-wrap .vc-bg-darkblue {
+    background-color: #3c4b68 !important;
+}
+
+.vc-wrap .vc-bg-gray {
+    background-color: #fafafa !important;
+}
+
+.vc-wrap .vc-bg-white {
+    background-color: #ffffff !important;
+}
+
+.vc-wrap .vc-bg-skyblue {
+    background-color: #61bed9 !important;
+}
+
+.vc-wrap .vc-bg-orange {
+    background-color: #fc7d3f !important;
+}
+
+/* text align */
+.vc-wrap .vc-txt-center {
+    text-align: center !important;
+}
+
+.vc-wrap .vc-txt-left {
+    text-align: left !important;
+}
+
+.vc-wrap .vc-txt-right {
+    text-align: right !important;
+}
+
+
+@media only screen and (max-width: 768px){    
+    .vc-wrap .vc-txt-mobilecenter {
+        text-align: center !important;
+    }
+
+    .vc-wrap .vc-txt-mobileleft {
+        text-align: left !important;
+    }
+
+    .vc-wrap .vc-txt-mobileright {
+        text-align: right !important;
+    }
+}
+
+
+
+/* custom float */
+.vc-wrap .vc-float-left,
+.vc-wrap .vc-float-right {
+    float: none;
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-float-left {
+        float: left;
+    }
+
+    .vc-wrap .vc-float-right {
+        float: right;
+    }
+}
+
+/* column */
+.vc-wrap .vc-col-6 {
+    width: 100%;
+}
+
+.vc-wrap .vc-col-6.vc-txt-wrap {
+    padding: 40px 20px;
+}
+
+@media only screen and (min-width: 480px){
+    .vc-wrap .vc-col-6.vc-txt-wrap {
+        padding: 50px 30px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-col-6 {
+        width: 50%;
+    }
+    
+    .vc-wrap .vc-col-6.vc-txt-wrap {
+        padding: 40px 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .vc-wrap .vc-col-6.vc-txt-wrap {
+        padding: 40px 25px;
+    }
+}
+
+@media only screen and (min-width: 1170px){
+    .vc-wrap .vc-col-6.vc-txt-wrap {
+        padding: 60px;
+    }
+}
+
+@media only screen and (min-width: 1220px){
+    .vc-wrap .vc-col-6.vc-txt-wrap {
+        padding: 80px 60px;
+    }
+}
+
+/* row */
+.vc-wrap .vc-row {
+    margin: 0;
+    padding: 0;
+}
+
+.vc-wrap .vc-row.vc-col-full {
+    padding: 40px 20px;
+}
+
+@media only screen and (min-width: 480px){
+    .vc-wrap .vc-row.vc-col-full {
+        padding: 50px 30px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-row.vc-col-full {
+        padding: 60px 45px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .vc-wrap .vc-row.vc-col-full {
+        padding: 60px;
+    }
+}
+
+/*********************
+ * header  */
+.vc-wrap .vc-header td {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.vc-wrap .vc-header td .vc-logo {
+    max-width: 60%
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-header td {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .vc-wrap .vc-header td {
+        padding: 45px 0;
+    }
+}
+
+/*********************
+ * header  */
+.vc-wrap .vc-banner td {
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+    background: #fff url(../images/header-banner.png) top center no-repeat;
+    background-size: cover;
+}
+
+.vc-wrap .vc-banner td h1 {
+    font-size: 51px;
+    line-height: 53px;
+    color: #fc7d3f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.vc-wrap .vc-banner td h2 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #1f3443;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 480px){
+    .vc-wrap .vc-banner td {
+        padding: 130px 20px 40px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-banner td {
+        padding: 180px 10px 50px 10px;
+    }
+    
+    .vc-wrap .vc-banner td h1 {
+        font-size: 64px;
+        line-height: 66px;
+    }
+
+    .vc-wrap .vc-banner td h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .vc-wrap .vc-banner td {
+        padding: 250px 20px 80px 20px;
+    }
+    
+    .vc-wrap .vc-banner td h1 {
+        font-size: 90px;
+        line-height: 92px;
+    }
+    
+    .vc-wrap .vc-banner td h2 {
+        font-size: 42px;
+        line-height: 44px;
+    }
+}
+
+/*********************
+ * body  */
+.vc-wrap .vc-body h3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #1f3443;
+}
+
+.vc-wrap .vc-body p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+@media only screen and (min-width: 480px){
+    .vc-wrap .vc-intro h3 {
+        padding: 0 5%;
+    }
+    
+    .vc-wrap .vc-col-6 img {
+        max-width: 50%
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-body h3 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .vc-wrap .vc-body p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .vc-wrap .vc-intro h3 {
+        padding: 0 10%;
+    }
+    
+    .vc-wrap .vc-col-6 img {
+        max-width: 100%
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .vc-wrap .vc-body h3 {
+        font-size: 42px;
+        line-height: 60px;
+    }
+
+    .vc-wrap .vc-body p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .vc-wrap .vc-intro h3 {
+        padding: 0 15%;
+    }
+}
+
+/* tel button */
+.vc-wrap .vc-body .vc-tel-btn {
+    margin: 20px 0;
+    width: 152px;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-body .vc-tel-btn {
+        margin: 40px 0 20px 0;
+        width: 304px;
+    }
+}
+
+/*********************
+ * footer  */
+
+/* top footer */
+.vc-wrap .vc-footer-top td {
+    padding: 40px 20px;
+}
+
+.vc-wrap .vc-footer-top h2 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.vc-wrap .vc-footer-top .vc-social {
+    margin: 20px 0 10px 0;
+}
+.vc-wrap .vc-footer-top .vc-social a {
+    position: relative;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    color: #fc7d3f;
+    font-size: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.vc-wrap .vc-footer-top .vc-social a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vc-wrap .vc-footer-top p,
+.vc-wrap .vc-footer-top p a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fed7ca;
+}
+
+@media only screen and (min-width: 480px){    
+    .vc-wrap .vc-footer-top h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .vc-wrap .vc-footer-top .vc-social {
+        margin: 30px 0 15px 0;
+    }
+    .vc-wrap .vc-footer-top .vc-social a {
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        font-size: 36px;
+    }
+
+    .vc-wrap .vc-footer-top p,
+    .vc-wrap .vc-footer-top p a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-footer-top td {
+        padding: 60px 20px;
+    }
+    
+    .vc-wrap .vc-footer-top h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .vc-wrap .vc-footer-top .vc-social {
+        margin: 30px 0 15px 0;
+    }
+    .vc-wrap .vc-footer-top .vc-social a {
+        margin: 0 6px;
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+    }
+
+    .vc-wrap .vc-footer-top p,
+    .vc-wrap .vc-footer-top p a {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .vc-wrap .vc-footer-top h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .vc-wrap .vc-footer-top .vc-social {
+        margin: 40px 0 25px 0;
+    }
+    .vc-wrap .vc-footer-top .vc-social a {
+        margin: 0 12px;
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+    }
+
+    .vc-wrap .vc-footer-top p,
+    .vc-wrap .vc-footer-top p a {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+/* bottom footer */
+.vc-wrap .vc-footer td {
+    padding: 20px;
+}
+
+.vc-wrap .vc-footer td p,
+.vc-wrap .vc-footer td p a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+    
+.vc-wrap .vc-footer td p:last-child,
+.vc-wrap .vc-footer td p:last-child a {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+@media only screen and (min-width: 480px){
+    .vc-wrap .vc-footer td p,
+    .vc-wrap .vc-footer td p a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .vc-wrap .vc-footer td p:last-child,
+    .vc-wrap .vc-footer td p:last-child a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .vc-wrap .vc-footer td {
+        padding: 40px 7.5%;
+    }
+    
+    .vc-wrap .vc-footer td p,
+    .vc-wrap .vc-footer td p a {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .vc-wrap .vc-footer td p:last-child,
+    .vc-wrap .vc-footer td p:last-child a {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .vc-wrap .vc-footer td p,
+    .vc-wrap .vc-footer td p a {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    
+    .vc-wrap .vc-footer td p:last-child,
+    .vc-wrap .vc-footer td p:last-child a {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+
+

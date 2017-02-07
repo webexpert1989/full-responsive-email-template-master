@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Vicinity</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700"/>
+	<link rel="stylesheet" type="text/css" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css"/>
+</head>
+
+<style>
+	/*
+	 * Vicinity - Email template
+	 * stylesheet
+	 * Created: 07/25/2016
+	 */
+
+
+	/*********************
+	 * global */
+	body, html {
+		margin: 0;
+		padding: 0;
+	}
+
+	#Vicinity {
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+		background: #fff url(./images/body-bg.png) top left repeat;
+	}
+
+	@media only screen and (min-width: 768px){
+		#Vicinity {
+			padding: 20px 10px;
+		}
+	}
+
+	/* Global css */
+	.vc-wrap {
+		margin: 0 auto;
+		padding: 0;
+		max-width: 1200px;
+		background: #fff;
+	}
+
+	.vc-wrap,
+	.vc-wrap *:not(.fa) {
+		font-family: "Droid Sans", Arial, sans-serif;
+		word-break: break-word !important;
+		box-sizing: border-box !important;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.vc-wrap .vc-clear:after {
+		content: "";
+		clear: both !important;
+		display: block !important;
+	}
+
+	.vc-wrap table {
+		width: 100%;
+	}
+
+	.vc-wrap table img {
+		max-width: 100%;
+	}
+
+	.vc-wrap table td {
+		padding: 0;
+	}
+
+	.vc-wrap p {
+		margin: 0;
+		padding: 15px 0;
+	}
+
+	.vc-wrap a {
+		text-decoration: none !important;
+	}
+
+	.vc-wrap h1,
+	.vc-wrap h2,
+	.vc-wrap h3,
+	.vc-wrap h4,
+	.vc-wrap h5,
+	.vc-wrap h6 {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* background color */
+	.vc-wrap .vc-bg-blackblue {
+		background-color: #1f3443 !important;
+	}
+
+	.vc-wrap .vc-bg-darkblue {
+		background-color: #3c4b68 !important;
+	}
+
+	.vc-wrap .vc-bg-gray {
+		background-color: #fafafa !important;
+	}
+
+	.vc-wrap .vc-bg-white {
+		background-color: #ffffff !important;
+	}
+
+	.vc-wrap .vc-bg-skyblue {
+		background-color: #61bed9 !important;
+	}
+
+	.vc-wrap .vc-bg-orange {
+		background-color: #fc7d3f !important;
+	}
+
+	/* text align */
+	.vc-wrap .vc-txt-center {
+		text-align: center !important;
+	}
+
+	.vc-wrap .vc-txt-left {
+		text-align: left !important;
+	}
+
+	.vc-wrap .vc-txt-right {
+		text-align: right !important;
+	}
+
+
+	@media only screen and (max-width: 768px){    
+		.vc-wrap .vc-txt-mobilecenter {
+			text-align: center !important;
+		}
+
+		.vc-wrap .vc-txt-mobileleft {
+			text-align: left !important;
+		}
+
+		.vc-wrap .vc-txt-mobileright {
+			text-align: right !important;
+		}
+	}
+
+
+
+	/* custom float */
+	.vc-wrap .vc-float-left,
+	.vc-wrap .vc-float-right {
+		float: none;
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-float-left {
+			float: left;
+		}
+
+		.vc-wrap .vc-float-right {
+			float: right;
+		}
+	}
+
+	/* column */
+	.vc-wrap .vc-col-6 {
+		width: 100%;
+	}
+
+	.vc-wrap .vc-col-6.vc-txt-wrap {
+		padding: 40px 20px;
+	}
+
+	@media only screen and (min-width: 480px){
+		.vc-wrap .vc-col-6.vc-txt-wrap {
+			padding: 50px 30px;
+		}
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-col-6 {
+			width: 50%;
+		}
+
+		.vc-wrap .vc-col-6.vc-txt-wrap {
+			padding: 40px 20px;
+		}
+	}
+
+	@media only screen and (min-width: 1024px){
+		.vc-wrap .vc-col-6.vc-txt-wrap {
+			padding: 40px 25px;
+		}
+	}
+
+	@media only screen and (min-width: 1170px){
+		.vc-wrap .vc-col-6.vc-txt-wrap {
+			padding: 60px;
+		}
+	}
+
+	@media only screen and (min-width: 1220px){
+		.vc-wrap .vc-col-6.vc-txt-wrap {
+			padding: 80px 60px;
+		}
+	}
+
+	/* row */
+	.vc-wrap .vc-row {
+		margin: 0;
+		padding: 0;
+	}
+
+	.vc-wrap .vc-row.vc-col-full {
+		padding: 40px 20px;
+	}
+
+	@media only screen and (min-width: 480px){
+		.vc-wrap .vc-row.vc-col-full {
+			padding: 50px 30px;
+		}
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-row.vc-col-full {
+			padding: 60px 45px;
+		}
+	}
+
+	@media only screen and (min-width: 1024px){
+		.vc-wrap .vc-row.vc-col-full {
+			padding: 60px;
+		}
+	}
+
+	/*********************
+	 * header  */
+	.vc-wrap .vc-header td {
+		padding: 10px 0;
+		text-align: center;
+	}
+
+	.vc-wrap .vc-header td .vc-logo {
+		max-width: 60%
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-header td {
+			padding: 20px 0;
+		}
+	}
+
+	@media only screen and (min-width: 1024px){
+		.vc-wrap .vc-header td {
+			padding: 45px 0;
+		}
+	}
+
+	/*********************
+	 * header  */
+	.vc-wrap .vc-banner td {
+		padding: 100px 20px 20px 20px;
+		text-align: center;
+		background: #fff url(./images/header-banner.png) top center no-repeat;
+		background-size: cover;
+	}
+
+	.vc-wrap .vc-banner td h1 {
+		font-size: 51px;
+		line-height: 53px;
+		color: #fc7d3f;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.vc-wrap .vc-banner td h2 {
+		font-size: 24px;
+		line-height: 26px;
+		color: #1f3443;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	@media only screen and (min-width: 480px){
+		.vc-wrap .vc-banner td {
+			padding: 130px 20px 40px 20px;
+		}
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-banner td {
+			padding: 180px 10px 50px 10px;
+		}
+
+		.vc-wrap .vc-banner td h1 {
+			font-size: 64px;
+			line-height: 66px;
+		}
+
+		.vc-wrap .vc-banner td h2 {
+			font-size: 30px;
+			line-height: 32px;
+		}
+	}
+
+	@media only screen and (min-width: 1024px){
+		.vc-wrap .vc-banner td {
+			padding: 250px 20px 80px 20px;
+		}
+
+		.vc-wrap .vc-banner td h1 {
+			font-size: 90px;
+			line-height: 92px;
+		}
+
+		.vc-wrap .vc-banner td h2 {
+			font-size: 42px;
+			line-height: 44px;
+		}
+	}
+
+	/*********************
+	 * body  */
+	.vc-wrap .vc-body h3 {
+		font-size: 24px;
+		line-height: 28px;
+		color: #1f3443;
+	}
+
+	.vc-wrap .vc-body p {
+		font-size: 16px;
+		line-height: 24px;
+		color: #666666;
+	}
+
+	@media only screen and (min-width: 480px){
+		.vc-wrap .vc-intro h3 {
+			padding: 0 5%;
+		}
+
+		.vc-wrap .vc-col-6 img {
+			max-width: 50%
+		}
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-body h3 {
+			font-size: 30px;
+			line-height: 42px;
+		}
+
+		.vc-wrap .vc-body p {
+			font-size: 20px;
+			line-height: 28px;
+		}
+
+		.vc-wrap .vc-intro h3 {
+			padding: 0 10%;
+		}
+
+		.vc-wrap .vc-col-6 img {
+			max-width: 100%
+		}
+	}
+
+	@media only screen and (min-width: 1024px){
+		.vc-wrap .vc-body h3 {
+			font-size: 42px;
+			line-height: 60px;
+		}
+
+		.vc-wrap .vc-body p {
+			font-size: 28px;
+			line-height: 36px;
+		}
+
+		.vc-wrap .vc-intro h3 {
+			padding: 0 15%;
+		}
+	}
+
+	/* tel button */
+	.vc-wrap .vc-body .vc-tel-btn {
+		margin: 20px 0;
+		width: 152px;
+		display: inline-block;
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-body .vc-tel-btn {
+			margin: 40px 0 20px 0;
+			width: 304px;
+		}
+	}
+
+	/*********************
+	 * footer  */
+
+	/* top footer */
+	.vc-wrap .vc-footer-top td {
+		padding: 40px 20px;
+	}
+
+	.vc-wrap .vc-footer-top h2 {
+		font-size: 22px;
+		line-height: 30px;
+		color: #fff;
+	}
+
+	.vc-wrap .vc-footer-top .vc-social {
+		margin: 20px 0 10px 0;
+	}
+	.vc-wrap .vc-footer-top .vc-social a {
+		position: relative;
+		margin: 0 5px;
+		width: 40px;
+		height: 40px;
+		color: #fc7d3f;
+		font-size: 30px;
+		text-align: center;
+		background: #fff;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.vc-wrap .vc-footer-top .vc-social a i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.vc-wrap .vc-footer-top p,
+	.vc-wrap .vc-footer-top p a {
+		font-size: 14px;
+		line-height: 20px;
+		color: #fed7ca;
+	}
+
+	@media only screen and (min-width: 480px){    
+		.vc-wrap .vc-footer-top h2 {
+			font-size: 28px;
+			line-height: 36px;
+		}
+
+		.vc-wrap .vc-footer-top .vc-social {
+			margin: 30px 0 15px 0;
+		}
+		.vc-wrap .vc-footer-top .vc-social a {
+			margin: 0 5px;
+			width: 50px;
+			height: 50px;
+			font-size: 36px;
+		}
+
+		.vc-wrap .vc-footer-top p,
+		.vc-wrap .vc-footer-top p a {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-footer-top td {
+			padding: 60px 20px;
+		}
+
+		.vc-wrap .vc-footer-top h2 {
+			font-size: 36px;
+			line-height: 44px;
+		}
+
+		.vc-wrap .vc-footer-top .vc-social {
+			margin: 30px 0 15px 0;
+		}
+		.vc-wrap .vc-footer-top .vc-social a {
+			margin: 0 6px;
+			width: 60px;
+			height: 60px;
+			font-size: 40px;
+		}
+
+		.vc-wrap .vc-footer-top p,
+		.vc-wrap .vc-footer-top p a {
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+
+	@media only screen and (min-width: 1024px){
+		.vc-wrap .vc-footer-top h2 {
+			font-size: 48px;
+			line-height: 56px;
+		}
+
+		.vc-wrap .vc-footer-top .vc-social {
+			margin: 40px 0 25px 0;
+		}
+		.vc-wrap .vc-footer-top .vc-social a {
+			margin: 0 12px;
+			width: 80px;
+			height: 80px;
+			font-size: 50px;
+		}
+
+		.vc-wrap .vc-footer-top p,
+		.vc-wrap .vc-footer-top p a {
+			font-size: 28px;
+			line-height: 36px;
+		}
+	}
+
+	/* bottom footer */
+	.vc-wrap .vc-footer td {
+		padding: 20px;
+	}
+
+	.vc-wrap .vc-footer td p,
+	.vc-wrap .vc-footer td p a {
+		color: #fff;
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.vc-wrap .vc-footer td p:last-child,
+	.vc-wrap .vc-footer td p:last-child a {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	@media only screen and (min-width: 480px){
+		.vc-wrap .vc-footer td p,
+		.vc-wrap .vc-footer td p a {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		.vc-wrap .vc-footer td p:last-child,
+		.vc-wrap .vc-footer td p:last-child a {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	@media only screen and (min-width: 768px){
+		.vc-wrap .vc-footer td {
+			padding: 40px 7.5%;
+		}
+
+		.vc-wrap .vc-footer td p,
+		.vc-wrap .vc-footer td p a {
+			font-size: 24px;
+			line-height: 32px;
+		}
+
+		.vc-wrap .vc-footer td p:last-child,
+		.vc-wrap .vc-footer td p:last-child a {
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+
+	@media only screen and (min-width: 1024px){
+		.vc-wrap .vc-footer td p,
+		.vc-wrap .vc-footer td p a {
+			font-size: 26px;
+			line-height: 36px;
+		}
+
+		.vc-wrap .vc-footer td p:last-child,
+		.vc-wrap .vc-footer td p:last-child a {
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+</style>
+
+<body>
+
+<table id="Vicinity" border=0 cellpadding=0 cellspacing=0><tr><td>
+
+	<div class="vc-wrap">
+		<table border=0 cellpadding=0 cellspacing=0>
+			<tr class="vc-header vc-bg-blackblue">
+				<td AP:EDIT>
+					<img src="./images/logo.png" class="vc-logo"/>
+				</td>
+			</tr>
+
+			<tr class="vc-banner">
+				<td AP:EDIT>
+					<h2>Digital Marketing</h2>
+					<h1>Heads Up</h1>
+				</td>
+			</tr>
+
+			<tr class="vc-body">
+				<td AP:EDIT>
+					<div class="vc-row vc-bg-gray vc-col-full vc-txt-center vc-intro" AP:EDIT>
+						<h3>Huge changes to Google Adwords, Facebook Advertising Advancements and Accelerated Mobile Pages</h3>
+						<p>This is the first edition of a semi-regular update we'll be providing to you - our valued clients - to help ensure you're always up-to-speed with the advancements in digital marketing we believe are most relevant to your business. Hope you find the content useful!</p>
+					</div>
+					<div class="vc-row vc-bg-white vc-clear">
+						<div class="vc-col-6 vc-bg-darkblue vc-float-left vc-txt-center" AP:EDIT>
+							<img src="./images/body-1.png"/>
+						</div>
+						<div class="vc-col-6 vc-float-right vc-txt-left vc-txt-mobilecenter vc-txt-wrap" AP:EDIT>
+							<h3>Google's MAJOR Change to Search Ads</h3>
+							<p>You may or may not have noticed that Google is no longer running ads down the right hand column on desktop computers - and instead will now only show four ads at the top of the Google search results page.</p>
+						</div>
+					</div>
+					<div class="vc-row vc-bg-white vc-clear">
+						<div class="vc-col-6 vc-bg-skyblue vc-float-right vc-txt-center" AP:EDIT>
+							<img src="./images/body-2.png"/>
+						</div>
+						<div class="vc-col-6 vc-float-left vc-txt-left vc-txt-mobilecenter vc-txt-wrap" AP:EDIT>
+							<h3>Google's MAJOR Change to Search Ads</h3>
+							<p>You may or may not have noticed that Google is no longer running ads down the right hand column on desktop computers - and instead will now only show four ads at the top of the Google search results page.</p>
+						</div>
+					</div>
+					<div class="vc-row vc-bg-gray vc-col-full vc-txt-left" AP:EDIT>
+						<p>This is a change that has been rolled out globally and will have a few outcomes for you if you are running an AdWords campaign. We've been keeping a close eye on everybody's Google campaign results since the change was made and here is an overview of the main implications we've discovered so far:</p> 
+
+						<p><b>Average costs per click will likely be higher, as advertisers are competing for fewer spots on Google.</b></p>
+
+						<p><b>We're seeing fewer ad impressions for clients who are running limited budgets in competitive industries.</b></p>
+
+						<p><b>For advertisers who have the budget to bid higher for top 4 positioning, we're seeing stronger click thru rates and better results.</b></p>
+
+						<p><b>Since the paid ads are now taking up more real estate in Google's search results, we expect to see slightly less visibility and traffic to organic (unpaid) listings for some websites.</b></p>
+
+						<p>We've already been busy making appropriate tweaks to affected clients' campaigns but if you have any questions you can always give Dave or Leena a call.</p>
+
+						<a href="tel:0240361369" class="vc-tel-btn"><img src="./images/btn-tel.png"/></a>
+					</div>
+				</td>
+			</tr>
+
+			<tr class="vc-footer-top vc-bg-orange vc-txt-center">
+				<td AP:EDIT>
+					<h2>Thank You, <br/>Dave, Leena &amp; the Team</h2>
+					<div class="vc-social">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+					</div>
+					<p>
+						<a href="#">Know Another Business We Could Help?</a><br/>
+						Please forward this email to them
+					</p>
+				</td>
+			</tr>
+
+			<tr class="vc-footer vc-bg-blackblue vc-txt-center">
+				<td AP:EDIT>
+					<p>
+						Copyright © 2016 Vicinity Marketing, All rights reserved. <br/>                    
+						Our mailing address: 66 King St, Newcastle NSW 2300 <br/>
+						<a href="tel:0240361369">(02) 4036 1369</a>   |   <a href="https://vicinity.marketing">https://vicinity.marketing</a> 
+					</p>
+
+					<p><i>You are receiving this email because we've had some kind of contact in the past. If you no longer wish to receive communication from us, please feel free to <b>unsubscribe</b></i></p>
+				</td>
+			</tr>
+
+		</table>
+	</div>
+</td></tr></table>
+</body>
+</html>
